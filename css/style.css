@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Body */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+.header{
+    background: url(../img/poster.png) no-repeat center; 
+    background-size: cover;
+    height: 600px;
+    position: relative;
+}
+
+
+.chef_text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .chef_text a{
+       border-radius: 10px;
+       padding: 10px;
+       background-color: green;
+       color: white;
+       width: 100px;
+       border: none;
+       text-decoration: none;
+  }
+/* Style navbar*/
+.navbar {
+    float: left;
+    z-index: 999;
+    background-color: #185519;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar li a {
+    color: black;
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar li a:hover{
+    background-color: #f32525;
+}
+.menu{
+    text-align: center;
+    padding : 50px;
+    display: block;
+}
+.menu div{
+    
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    background: transparent;
+}
+
+.about{
+    padding: 20px;
+    display: block;
+    text-align: center;
+    background: #FCDE70;
+    
+}
+.about p{
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact{
+    display: block;
+    text-align: center;
+    background-color: #E8B86D;
+    padding: 20px;
+}
+.contact p,h3{
+    font-family: 'Times New Roman', Times, serif;
+}
+.contact .address{
+   float: left;
+    display: block;
+    text-align: center;
+    padding-left: 25% ;
+}
+.contact.Time{
+    float: right;
+    display: block;
+    text-align: center;
+}
+.contact .Time ul,li{
+    list-style-type: none;
+} 
+/* Footer */
+.footer{
+
+    padding: 10px;
+    text-align: center;
+    background: #185519;
+}
+.footer h2{
+    font-size: 15px;
+}
+
+/* Rsponsive when screen smaller */
+
+@media screen and (max-width:800px){
+    
+    .navbar a{
+        float: none;
+        width: 100%;
+        
+    }
+    .menu div{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0px;
+        float: none;
+        
+    }
+    .contact .address{
+        text-align: center;
+        width: 100%;
+        padding-right: 25%;
+    }
+    .contact .Time{
+        text-align: center;
+        width: 100%;
+       
+    }
+}
